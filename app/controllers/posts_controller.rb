@@ -1,3 +1,5 @@
+# require 'RedCloth'
+
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
@@ -5,7 +7,7 @@ class PostsController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
   
   def index
-    @posts = Post.all
+    @posts = Post.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb

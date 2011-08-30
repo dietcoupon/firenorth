@@ -1,0 +1,17 @@
+<%= form_for(@who) do |f| %>
+  <% if @who.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@who.errors.count, "error") %> prohibited this who from being saved:</h2>
+
+      <ul>
+      <% @who.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
