@@ -1,5 +1,15 @@
-<%= render :partial => @posts %>
+<html>
+  <head>
+    <title>FireLight Studios</title>
+    <%= stylesheet_link_tag "stylesheet" %>
+  </head>
+  <body>
+    <%= link_to 'About Us!', page_path("aboutus") %> | 
+    <%= link_to 'Our Portfolio!', page_path("portfolio") %> | 
+    <%= link_to 'What We Do!', page_path("whatwedo") %>
 
-<%= link_to 'New Post', new_post_path %>
+      <%= render :partial => @posts %>
 
-<%= stylesheet_link_tag "stylesheet" %>
+      <%= link_to 'New Post', new_post_path %>
+  </body>
+</html>

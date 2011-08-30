@@ -8,6 +8,7 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 gem 'rake-compiler'
 gem 'RedCloth'
+gem 'high_voltage'
 
 # Use unicorn as the web server
 # gem 'unicorn'
