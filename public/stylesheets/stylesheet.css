@@ -9,3 +9,50 @@ h1 {
 body, p, ol, ul, td {
 	font-family:"univers", sans-serif;
 }
+
+/* Portfolio */
+
+div.gallery {
+	float:left;
+	padding:0.2em 0.6em;
+	margin-left:75px;
+	height:175px;
+	filter:alpha(opacity=8);
+		-moz-opacity:0.8;
+		-khtml-opacity: 0.8;
+		opacity: 0.8;
+}
+
+.gallery p {
+	text-align: center;
+	font-family:"hoefler", "garamond", serif;
+	font-size:10.5pt;
+}
+
+.gallery a {
+	font-family:"garamond", serif;
+	color:#116050;
+	text-decoration:none;
+	font-size:10.5pt;
+}
+
+.gallery a:active {
+	color:#116050;
+	font-family:"garamond", serif;
+	text-decoration:none;
+	font-size:10.5pt;
+}
+
+.gallery a:visited {
+	font-family:"garamond", serif;
+	color:#116050;
+	text-decoration:none;
+	font-size:10.5pt;
+}
+
+.gallery a:hover {
+	font-family:"garamond", serif;
+	color:#703b14;
+	text-decoration:none;
+	font-size:10.5pt;
+}
