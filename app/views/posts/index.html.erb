@@ -1,0 +1,9 @@
+<%= render :partial => @posts %>
+
+<p>
+  <%= link_to 'Edit', edit_post_path(:posts) %> |
+  <%= link_to 'Destroy', @post, :method => :delete, :confirm => "Are you sure?" %> |
+  <%= link_to 'See All Posts', posts_path %>
+</p>
+
+<%= link_to 'New Post', new_post_path %>
