@@ -1,10 +1,4 @@
 Firelight::Application.routes.draw do
-  resources :whos
-
-  resources :whats
-
-  resources :portfolios
-
   resources :posts
   
   root :to => 'posts#index'
