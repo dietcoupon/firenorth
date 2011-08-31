@@ -1,5 +1,17 @@
 <% div_for post do %>
-  <h2><%= link_to_unless_current h(post.title), post %> </h2>
-  <h4><%= post.created_at.strftime("%A %B %d, %Y") %></h4>
-  <%= raw RedCloth.new(post.body).to_html %>
+  <div class="blogPost">
+    
+    <h2>
+      <%= link_to_unless_current h(post.title), post %>
+    </h2>
+    
+    <p class="postDate">
+      <%= post.created_at.strftime("%A %B %d, %Y") %>
+    </p>
+    
+    <div class="blogText">      
+      <%= raw RedCloth.new(post.body).to_html %>
+    </div>
+    
+  </div>
 <% end %>
