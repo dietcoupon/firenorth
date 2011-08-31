@@ -1,5 +1,8 @@
 body {
 	background-color:#dbdbdb;
+	background-image:url("/images/gradient-border.png");
+	background-repeat:repeat-x;
+	background-position:top;
 }
 
 h1 {
@@ -9,6 +12,10 @@ h1 {
 body, p, ol, ul, td {
 	font-family:"optima", sans-serif;
 	color:#000000;
+}
+
+a {
+	
 }
 
 div.container {
@@ -23,12 +30,13 @@ div.logo {
 	margin-left:-300px;
 	top:0px;
 	width:600px;
-	height:350px;
-	background-color:black;
+	height:400px;
+	background-image:url("/images/firenorth-logo.png");
+	background-position:top;
 }
 
 div.content {
-	margin-top:375px;
+	margin-top:300px;
 	margin-left:auto;
 	margin-right:auto;
 	width:600px;
@@ -42,18 +50,29 @@ div.linkSpacer{
 
 div.link {
 	position:fixed;
+	height:45px;
 	width:15%;
 	margin-top:20px;
 	margin-left:25px;
 	z-index:100;
+	background-color:#e6e6e6;
+	opacity:0.7;
+	-moz-box-shadow: 5px 5px 10px #888;
+	-webkit-box-shadow: 5px 5px 10px #888;
+	box-shadow: 5px 5px 10px #888;
+}
+
+.link p {
+	font-family:"optima", sans-serif;
+	font-size:20px;
+	text-align:center;
 }
 
 .link a {
-	font-size:20px;
 	font-weight:bold;
-	font-family:"optima", sans-serif;
 	text-decoration:none;
 	color:#6D7B8D;
+	padding-top:20px;
 	text-align:center;
 }
 
@@ -78,11 +97,11 @@ div#one {
 }
 
 div#two {
-	margin-top:90px;
+	margin-top:110px;
 }
 
 div#three {
-	margin-top:160px;
+	margin-top:200px;
 }
 
 /* Blog */
@@ -92,7 +111,11 @@ div.blogPost {
 	margin-top:30px;
 	margin-left:auto;
 	margin-right:auto;
-	border:solid 1px;
+  background-color:#e6e6e6;
+	opacity:0.7;
+	-moz-box-shadow: 5px 5px 10px #888;
+	-webkit-box-shadow: 5px 5px 10px #888;
+	box-shadow: 5px 5px 10px #888;
 }
 
 .blogPost h2 {
@@ -102,7 +125,7 @@ div.blogPost {
 }
 
 .blogPost a {
-	font-family:"garamond", serif;
+	font-family:"optima", sans-serif;
 	text-decoration:none;
 	color:#4b4b4b;
 	text-align:center;
@@ -124,15 +147,13 @@ div.blogPost {
 }
 
 div.blogText {
-	width:500px;
+	width:450px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 .blogText p {
 	font-family:"univers", sans-serif;
-	padding-left:40px;
-	padding-right:25px;
 	padding-bottom:25px;
 	font-size:15px;
 	line-height:20px;
