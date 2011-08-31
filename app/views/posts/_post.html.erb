@@ -1,4 +1,5 @@
 <% div_for post do %>
   <h2><%= link_to_unless_current h(post.title), post %> </h2>
-  <%= simple_format h(post.body) %>
+  <h4><%= post.created_at.strftime("%A %B %d, %Y") %></h4>
+  <%= raw RedCloth.new(post.body).to_html %>
 <% end %>
