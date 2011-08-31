@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <% content_for :title, "FireLight - Portfolio" %>
+  <% content_for :title, "FireNorth - Portfolio" %>
   <%= stylesheet_link_tag "stylesheet" %>
   
   <script type="text/javascript" src="/javascripts/jquery-1.4.3.min.js"></script>
@@ -24,28 +24,53 @@
 </head>
 
 <body>
-  <h3>Look at us! We make stuff!</h3>
-  
-  <div class="gallery">
+  <div class="container">
     
-    <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-      <p class="gallery">2008</p></a>
+    <div class="logo"></div>
+    
+
       
-  </div>
-  
-  <div class="gallery">
-    <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-      <p class="gallery">2008</p></a>
-  </div>
-  
-  <div class="gallery">
-    <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-      <p class="gallery">2008</p></a>
-  </div>
-  
-  <br><br>
-  <div class = "gallery">
-    <%= link_to 'Go Back Home', posts_path %>
+      <div class="linkSpacer"></div>
+      
+      <div class="link" id="one">
+        <%= link_to 'About Us!', page_path("aboutus") %>
+      </div>
+      
+      <div class="link" id="two">
+        <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+      </div>
+      
+      <div class="link" id="three">
+        <%= link_to 'What We Do!', page_path("whatwedo") %>
+      </div>
+    
+
+    
+    <div class="content">
+      <h3>Look at us! We make stuff!</h3>
+      
+      <div class="gallery">
+        
+        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+          <p class="gallery">2008</p></a>
+          
+      </div>
+      
+      <div class="gallery">
+        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+          <p class="gallery">2008</p></a>
+      </div>
+      
+      <div class="gallery">
+        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+          <p class="gallery">2008</p></a>
+      </div>
+      
+      <br><br>
+      <div class = "gallery">
+        <%= link_to 'Go Back Home', posts_path %>
+      </div>
+    </div>
   </div>
   
   <script>

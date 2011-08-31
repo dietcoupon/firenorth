@@ -1,18 +1,43 @@
 <html>
 
 <head>
-  <% content_for :title, "FireLight -- What We Do" %>
+  <% content_for :title, "FireNorth -- What We Do" %>
   <%= stylesheet_link_tag "stylesheet" %>
   
   
 </head>
 
 <body>
-  <h3>We do things correctly. Here's how!</h3>
-  
-  <br><br>
-  
-  <%= link_to 'Go Back Home', posts_path %>
+  <div class="container">
+    
+    <div class="logo"></div>
+    
+
+      
+      <div class="linkSpacer"></div>
+      
+      <div class="link" id="one">
+        <%= link_to 'About Us!', page_path("aboutus") %>
+      </div>
+      
+      <div class="link" id="two">
+        <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+      </div>
+      
+      <div class="link" id="three">
+        <%= link_to 'What We Do!', page_path("whatwedo") %>
+      </div>
+    
+
+    
+    <div class="content">
+      <h3>We do things correctly. Here's how!</h3>
+      
+      <br><br>
+      
+      <%= link_to 'Go Back Home', posts_path %>
+    </div>
+  </div>
 </body>
 
 </html>
