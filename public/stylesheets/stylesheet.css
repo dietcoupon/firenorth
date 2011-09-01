@@ -130,9 +130,8 @@ div.blogPost {
 	margin-left:auto;
 	margin-right:auto;
   background-color:#e6e6e6;
+	border-radius:15px;
 	opacity:0.7;
-	-moz-box-shadow: 5px 5px 10px #888;
-	-webkit-box-shadow: 5px 5px 10px #888;
 	box-shadow: 5px 5px 10px #888;
 }
 
@@ -201,6 +200,15 @@ div.blogText {
 	color:#4b4b4b;
 }
 
+.blogText img {
+	opacity:0.65;
+	box-shadow: 5px 5px 10px #888;
+}
+
+.blogText img:hover {
+	opacity:0.95;
+}
+
 p.postDate {
 	font-family:"garamond", serif;
 	padding-bottom:10px;
@@ -229,8 +237,6 @@ div.gallery {
 
 .gallery img {
 	opacity:0.65;
-	-moz-box-shadow: 5px 5px 10px #888;
-	-webkit-box-shadow: 5px 5px 10px #888;
 	box-shadow: 5px 5px 10px #888;
 }
 
