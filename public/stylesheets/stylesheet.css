@@ -20,7 +20,7 @@ div.fadeIn {
 	padding:0px;
 	width:100%;
 	height:100%;
-	background-color:#000000;
+	background-color:#000018;
 	z-index:500;
 }
 
@@ -31,14 +31,23 @@ div.logo {
 	margin-left:-300px;
 	top:0px;
 	width:600px;
-	height:400px;
+	height:250px;
 	background-image:url("/images/firenorth-logo.png");
 	background-position:top;
 	z-index:1000;
 }
 
+div.sidebarImage {
+	position:fixed;
+	top:0px;
+	right:100px;
+	width:150px;
+	background-image:url("/images/sidebar.png");
+	z-index:400;
+}
+
 div.content {
-	margin-top:300px;
+	margin-top:200px;
 	margin-left:auto;
 	margin-right:auto;
 	width:600px;
@@ -52,16 +61,19 @@ div.linkSpacer{
 
 div.link {
 	position:fixed;
-	height:45px;
+	height:40px;
 	width:175px;
-	margin-top:20px;
 	margin-left:25px;
 	z-index:100;
 	background-color:#e6e6e6;
-	opacity:0.7;
+	opacity:0.6;
 	-moz-box-shadow: 5px 5px 10px #888;
 	-webkit-box-shadow: 5px 5px 10px #888;
 	box-shadow: 5px 5px 10px #888;
+}
+
+.link:hover {
+	opacity:0.73;
 }
 
 .link p {
@@ -99,11 +111,15 @@ div#one {
 }
 
 div#two {
-	margin-top:110px;
+	margin-top:95px;
 }
 
 div#three {
-	margin-top:200px;
+	margin-top:170px;
+}
+
+div#four {
+	margin-top:255px;
 }
 
 /* Blog */
@@ -144,7 +160,7 @@ div.blogPost {
 }
 
 .blogPost a:hover {
-	text-decoration:none;
+	text-decoration:underline;
 	color:#4b4b4b;
 }
 
@@ -167,6 +183,7 @@ div.blogText {
 	text-decoration:none;
 	color:#4b4b4b;
 	text-align:center;
+	font-weight:bold;
 }
 
 .blogText a:active {
@@ -180,8 +197,8 @@ div.blogText {
 }
 
 .blogText a:hover {
-	text-decoration:none;
-	color:#ffccff;
+	text-decoration:underline;
+	color:#4b4b4b;
 }
 
 p.postDate {
@@ -201,17 +218,24 @@ div.gallery {
 	padding:0.2em 0.6em;
 	margin-left:5px;
 	margin-top:25px;
-	height:175px;
-	filter:alpha(opacity=8);
-		-moz-opacity:0.8;
-		-khtml-opacity: 0.8;
-		opacity: 0.8;
+	height:175px;	
 }
 
 .gallery p {
 	text-align: center;
 	font-family:"optima", sans-serif;
 	font-size:10.5pt;
+}
+
+.gallery img {
+	opacity:0.65;
+	-moz-box-shadow: 5px 5px 10px #888;
+	-webkit-box-shadow: 5px 5px 10px #888;
+	box-shadow: 5px 5px 10px #888;
+}
+
+.gallery img:hover {
+	opacity:0.95;
 }
 
 .gallery a {

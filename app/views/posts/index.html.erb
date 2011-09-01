@@ -7,28 +7,33 @@
     <script type="text/javascript" src="/javascripts/jquery-1.4.3.min.js"></script>
     <script>
       $(document).ready(function() {
-        $(".fadeIn").fadeOut(10000, function(){        
+        $(".fadeIn").fadeOut(7000, "swing", function(){                 //FADE IN CRAP
           // ANIMATION COMPLETE
         });
       });
     </script>
   </head>
   <body>
-    <div class="fadeIn"></div>
+    <div class="fadeIn"></div>                           <!--FADE IN CRAP-->
     <div class="logo"></div>     
     <div class="header"></div>
+    <div class="sidebarImage"></div>
     <div class="linkSpacer"></div>
     
     <div class="link" id="one">
-      <%= link_to 'About Us!', page_path("aboutus") %>
+      <%= link_to 'Go Home!', posts_path %>
     </div>
     
     <div class="link" id="two">
-      <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+      <%= link_to 'What We Do!', page_path("whatwedo") %>
     </div>
     
     <div class="link" id="three">
-      <%= link_to 'What We Do!', page_path("whatwedo") %>
+      <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+    </div>
+    
+    <div class="link" id="four">
+      <%= link_to 'About Us!', page_path("aboutus") %>
     </div>
     
     <div class="content">

@@ -1,5 +1,22 @@
-<h1>New post</h1>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <% content_for :title, "FireNorth -- New Post" %>
+    <%= stylesheet_link_tag "/public/stylesheets/stylesheet.css" %>
+  </head>
+  <body>
+    <div class="logo"></div>     
+    <div class="header"></div>
+    <div class="sidebarImage"></div>
+    <div class="content">
+      <div class="linkSpacer"></div>
+      
+      <h1>Post to Front Page</h1>
 
-<%= render 'form' %>
+      <%= render 'form' %>
 
-<%= link_to 'Back', posts_path %>
+      <%= link_to 'Back', posts_path %>
+    </div>
+  </body>
+</html>

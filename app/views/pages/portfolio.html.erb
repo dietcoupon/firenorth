@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <% content_for :title, "FireNorth - Portfolio" %>
+  <% content_for :title, "FireNorth -- Portfolio" %>
   <%= stylesheet_link_tag "stylesheet" %>
   
   <script type="text/javascript" src="/javascripts/jquery-1.4.3.min.js"></script>
@@ -29,16 +29,20 @@
   <div class="linkSpacer"></div>
   
   <div class="link" id="one">
-    <%= link_to 'About Us!', page_path("aboutus") %>
+    <%= link_to 'Go Home!', posts_path %>
   </div>
   
   <div class="link" id="two">
-    <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+    <%= link_to 'What We Do!', page_path("whatwedo") %>
   </div>
   
   <div class="link" id="three">
-    <%= link_to 'What We Do!', page_path("whatwedo") %>
-  </div>    
+    <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+  </div>
+  
+  <div class="link" id="four">
+    <%= link_to 'About Us!', page_path("aboutus") %>
+  </div>  
     
   <div class="content">
     <h3>Look at us! We make stuff!</h3>
@@ -60,10 +64,6 @@
         <p class="gallery">2008</p></a>
     </div>
     
-    <br><br>
-    <div class = "gallery">
-      <%= link_to 'Go Back Home', posts_path %>
-    </div>
   </div>  
   <script>
   $(document).ready(function() {
