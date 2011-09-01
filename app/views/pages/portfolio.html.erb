@@ -24,55 +24,47 @@
 </head>
 
 <body>
-  <div class="container">
-    
-    <div class="logo"></div>
-    
-
-      
-      <div class="linkSpacer"></div>
-      
-      <div class="link" id="one">
-        <%= link_to 'About Us!', page_path("aboutus") %>
-      </div>
-      
-      <div class="link" id="two">
-        <%= link_to 'Our Portfolio!', page_path("portfolio") %>
-      </div>
-      
-      <div class="link" id="three">
-        <%= link_to 'What We Do!', page_path("whatwedo") %>
-      </div>
-    
-
-    
-    <div class="content">
-      <h3>Look at us! We make stuff!</h3>
-      
-      <div class="gallery">
-        
-        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-          <p class="gallery">2008</p></a>
-          
-      </div>
-      
-      <div class="gallery">
-        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-          <p class="gallery">2008</p></a>
-      </div>
-      
-      <div class="gallery">
-        <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
-          <p class="gallery">2008</p></a>
-      </div>
-      
-      <br><br>
-      <div class = "gallery">
-        <%= link_to 'Go Back Home', posts_path %>
-      </div>
-    </div>
+  <div class="logo"></div>
+  
+  <div class="linkSpacer"></div>
+  
+  <div class="link" id="one">
+    <%= link_to 'About Us!', page_path("aboutus") %>
   </div>
   
+  <div class="link" id="two">
+    <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+  </div>
+  
+  <div class="link" id="three">
+    <%= link_to 'What We Do!', page_path("whatwedo") %>
+  </div>    
+    
+  <div class="content">
+    <h3>Look at us! We make stuff!</h3>
+    
+    <div class="gallery">
+      
+      <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+        <p class="gallery">2008</p></a>
+        
+    </div>
+    
+    <div class="gallery">
+      <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+        <p class="gallery">2008</p></a>
+    </div>
+    
+    <div class="gallery">
+      <a href="/images/portfolio/SnarkBusPage.png" class="popup" rel="snark" title="A fun design for my first wordpress implementation."><img src="/images/portfolio/SnarkBusThumb.png" title="snarkbus"><br />
+        <p class="gallery">2008</p></a>
+    </div>
+    
+    <br><br>
+    <div class = "gallery">
+      <%= link_to 'Go Back Home', posts_path %>
+    </div>
+  </div>  
   <script>
   $(document).ready(function() {
     $('a.popup').fancybox();

@@ -1,38 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
     <% content_for :title, "FireNorth Studios" %>
     <%= stylesheet_link_tag "/public/stylesheets/stylesheet.css" %>
+    <script type="text/javascript" src="/javascripts/jquery-1.4.3.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fadeIn").fadeOut(10000, function(){        
+          // ANIMATION COMPLETE
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="container">
-      
-      <div class="logo"></div>
-      
-
-        
-        <div class="linkSpacer"></div>
-        
-        <div class="link" id="one">
-          <%= link_to 'About Us!', page_path("aboutus") %>
-        </div>
-        
-        <div class="link" id="two">
-          <%= link_to 'Our Portfolio!', page_path("portfolio") %>
-        </div>
-        
-        <div class="link" id="three">
-          <%= link_to 'What We Do!', page_path("whatwedo") %>
-        </div>
-      
-
-      
-      <div class="content">
-      
-      <%= render :partial => @posts %>
-      
-      <%= link_to 'New Post', new_post_path %>
-      
-      </div>
+    <div class="fadeIn"></div>
+    <div class="logo"></div>     
+    <div class="header"></div>
+    <div class="linkSpacer"></div>
+    
+    <div class="link" id="one">
+      <%= link_to 'About Us!', page_path("aboutus") %>
+    </div>
+    
+    <div class="link" id="two">
+      <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+    </div>
+    
+    <div class="link" id="three">
+      <%= link_to 'What We Do!', page_path("whatwedo") %>
+    </div>
+    
+    <div class="content">
+    
+    <%= render :partial => @posts %>
+    
+    <%= link_to 'New Post', new_post_path %>
+    
     </div>
   </body>
 </html>
