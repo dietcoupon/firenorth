@@ -1,6 +1,6 @@
 body {
 	background-color:#dbdbdb;
-	background-image:url("/images/gradient-border.png");
+	background-image:url("/images/gradient-stars.png");
 	background-repeat: repeat-x;
 	background-position:top;
 }
@@ -67,8 +67,6 @@ div.link {
 	z-index:100;
 	background-color:#e6e6e6;
 	opacity:0.6;
-	-moz-box-shadow: 5px 5px 10px #888;
-	-webkit-box-shadow: 5px 5px 10px #888;
 	box-shadow: 5px 5px 10px #888;
 }
 
@@ -83,6 +81,7 @@ div.link {
 }
 
 .link a {
+	font-size:20px;
 	font-weight:bold;
 	text-decoration:none;
 	color:#6D7B8D;
@@ -101,7 +100,6 @@ div.link {
 }
 
 .link a:hover {
-	font-size:20px;
 	text-decoration:none;
 	color:#4b4b4b;
 }
