@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
     <script type="text/javascript" src="/javascripts/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="/javascripts/resizing_background.js"></script>
     <style type="text/css">
     
     #fancybox-left-ico {
@@ -27,27 +28,26 @@
       });
     </script>
   </head>
-  <body>
+  <body onLoad="rbInit()" onResize="rbResize()">
     <div class="fadeIn"></div>                           <!--FADE IN CRAP-->
     <div class="logo"></div>     
-    <div class="header"></div>
     <div class="sidebarImage"></div>
     <div class="linkSpacer"></div>
     
     <div class="link" id="one">
-      <%= link_to 'Go Home!', posts_path %>
+      <%= link_to image_tag('/images/home-button.png', :border=>0), posts_path %>
     </div>
-    
+
     <div class="link" id="two">
-      <%= link_to 'What We Do!', page_path("whatwedo") %>
+      <%= link_to image_tag("/images/what-button.png", :border=>0), page_path("whatwedo") %>
     </div>
-    
+
     <div class="link" id="three">
-      <%= link_to 'Our Portfolio!', page_path("portfolio") %>
+      <%= link_to image_tag("/images/portfolio-button.png", :border=>0), page_path("portfolio") %>
     </div>
-    
+
     <div class="link" id="four">
-      <%= link_to 'About Us!', page_path("aboutus") %>
+      <%= link_to image_tag("/images/who-button.png", :border=>0), page_path("aboutus") %>
     </div>
     
     <div class="content">
@@ -57,7 +57,15 @@
     <%= link_to 'New Post', new_post_path %>
     
     </div>
+
     <script>
+    // "true" means "keep the proportions of the original image."
+    // If you pass "false" the image fills the whole window,
+    // even if it must be distorted to do so. Experiment.
+    rbOpen(true);
+
+    rbClose("/images/sidebar.png");
+
     $(document).ready(function() {
       $('a.popup').fancybox();
     });

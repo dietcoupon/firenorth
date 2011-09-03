@@ -1,8 +1,14 @@
+@font-face {
+	font-family: Optimus;
+	src: url('OptimusPrincepsSemiBold.ttf');
+}
+
 body {
 	background-color:#dbdbdb;
-	background-image:url("/images/gradient-stars.png");
-	background-repeat: repeat-x;
-	background-position:top;
+	background-image:url("/images/gradient-stars.png"), url("/images/footer.png");
+	background-repeat: repeat-x, repeat-x;
+	background-position: top, bottom;
+	background-attachment: scroll, scroll;
 }
 
 h1 {
@@ -40,7 +46,8 @@ div.logo {
 div.sidebarImage {
 	position:fixed;
 	top:0px;
-	right:100px;
+	float:right;
+	margin-right:0px;
 	width:150px;
 	background-image:url("/images/sidebar.png");
 	z-index:400;
@@ -50,6 +57,7 @@ div.content {
 	margin-top:200px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:350px;
 	width:600px;
 }
 
@@ -65,8 +73,7 @@ div.link {
 	width:175px;
 	margin-left:25px;
 	z-index:100;
-	background-color:#e6e6e6;
-	opacity:0.6;
+	opacity:0.5;
 	box-shadow: 5px 5px 10px #888;
 }
 
@@ -74,34 +81,15 @@ div.link {
 	opacity:0.73;
 }
 
-.link p {
-	font-family:"optima", sans-serif;
-	font-size:20px;
-	text-align:center;
+.link:active {
+	opacity:0.95;
 }
 
-.link a {
-	font-size:20px;
-	font-weight:bold;
-	text-decoration:none;
-	color:#6D7B8D;
-	padding-top:20px;
-	text-align:center;
-}
-
-.link a:active {
-	text-decoration:none;
-	color:#6D7B8D;
-}
-
-.link a:visited {
-	text-decoration:none;
-	color:#6D7B8D;
-}
-
-.link a:hover {
-	text-decoration:none;
-	color:#4b4b4b;
+.link img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:101;
 }
 
 div#one {
